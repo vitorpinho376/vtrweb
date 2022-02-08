@@ -20,6 +20,7 @@ const HeaderWrapper = styled.div`
     align-items: center;
     justify-content: space-around;
     gap: 56px;
+    z-index: 9;
 
     svg {
         min-width: 100px;
@@ -54,6 +55,11 @@ const LinkNav = styled.a`
     line-height: 32px;
     color: ${(props) => props.theme.colors.white};
     text-decoration: none;
+    transition: all 0.2s ease-in;
+
+    :hover {
+        opacity: 0.8;
+    }
 `;
 
 const MutedLinkNav = styled(LinkNav)`
@@ -77,8 +83,10 @@ const Header = ({ modal }: HeaderProps) => {
                 <MutedLinkNav>
                     My work <Badge>Soon</Badge>
                 </MutedLinkNav>
-                <LinkNav href="#">About Me</LinkNav>
-                <LinkNav href="#">Contact</LinkNav>
+                <MutedLinkNav>
+                    About me <Badge>Soon</Badge>
+                </MutedLinkNav>
+                <LinkNav href="mailto:hi@vitor.mobi">Contact</LinkNav>
             </MainNav>
             <SocialNav>
                 <LinkNav

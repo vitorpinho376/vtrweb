@@ -5,16 +5,17 @@ import Linkedin from "../../assets/linkedin.svg";
 import GridImage from "../../assets/grid.svg";
 
 const MainSection = styled.section`
-    padding: 80px;
+    padding: 80px 80px 24px;
     height: 100vh;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
     flex-direction: column;
+    gap: 56px;
 
     h1 {
         font-weight: 900;
-        font-size: 80px;
-        line-height: 101px;
+        font-size: 5rem;
+        line-height: 6.25rem;
         max-width: 900px;
 
         b {
@@ -51,6 +52,23 @@ const GridDetail = styled.div`
     }
 `;
 
+const Box = styled.div`
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+`;
+
+const ClientGrid = styled.div`
+    display: flex;
+    gap: 32px;
+    align-items: center;
+
+    img {
+        height: 100px;
+        opacity: 0.7;
+    }
+`;
+
 const Hero = () => {
     return (
         <MainSection>
@@ -67,6 +85,17 @@ const Hero = () => {
             <GridDetail>
                 <GridImage />
             </GridDetail>
+            <Box>
+                <span>Here are some companies i've worked with:</span>
+                <ClientGrid>
+                    <img src="/clients/Carta.png" />
+                    <img src="/clients/Stone.png" />
+                    <img src="/clients/HBO.png" />
+                    <img src="/clients/Springboard.png" />
+                    <img src="/clients/WhatsGood.png" />
+                    <img src="/clients/Nibo.png" />
+                </ClientGrid>
+            </Box>
         </MainSection>
     );
 };
