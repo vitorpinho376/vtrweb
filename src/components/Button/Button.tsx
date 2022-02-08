@@ -6,6 +6,7 @@ export interface ButtonProps {
     children?: ReactNode;
     variant?: "primary" | "neutral";
     href?: string;
+    target?: string;
 }
 
 const variantOptions = {
@@ -70,9 +71,9 @@ const StyledButton = styled.a<ButtonProps>`
         `}
 `;
 
-const Button = ({ children, variant, href }: ButtonProps) => {
+const Button = ({ children, variant, href, target }: ButtonProps) => {
     return (
-        <StyledButton href={href} variant={variant}>
+        <StyledButton target={target} href={href} variant={variant}>
             {children}
         </StyledButton>
     );

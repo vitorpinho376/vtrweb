@@ -109,7 +109,11 @@ const Hero = () => {
             </h1>
             <ActionHolder>
                 <Button href="mailto:hi@vitor.mobi">Send a message</Button>
-                <Button variant="neutral">
+                <Button
+                    target="_blank"
+                    href="https://www.linkedin.com/in/vitorcc/"
+                    variant="neutral"
+                >
                     <Linkedin /> Connect with me
                 </Button>
             </ActionHolder>
