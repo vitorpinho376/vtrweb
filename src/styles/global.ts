@@ -8,12 +8,16 @@ export default createGlobalStyle`
    }
 
    body {
-	background: ${(props) => props.theme.colors.gradient};
-    color: ${(props) => props.theme.colors.white};
-    font-family: 'Open Sans', sans-serif;
-	background-size: 200% 200%;
-	animation: gradient 5s ease infinite;
-	height: 100vh;
+       background: ${(props) => props.theme.colors.gradient};
+       color: ${(props) => props.theme.colors.white};
+       font-family: 'Open Sans', sans-serif;
+       background-size: 200% 200%;
+       animation: gradient 5s ease infinite;
+       height: 100vh;
+
+       @media only screen and (max-width: 1000px) {
+        height: 100%;
+    }
    }
 
    @keyframes gradient {

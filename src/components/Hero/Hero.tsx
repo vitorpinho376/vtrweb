@@ -19,7 +19,17 @@ const MainSection = styled.section`
         max-width: 900px;
 
         b {
-            color: ${(props) => props.theme.colors.white};
+            color: ${(props) => props.theme.colors.whiteMuted};
+        }
+    }
+
+    @media only screen and (max-width: 1000px) {
+        gap: 32px;
+        padding: 35% 5% 5%;
+        height: auto;
+        h1 {
+            font-size: 3rem;
+            line-height: 4.25rem;
         }
     }
 `;
@@ -28,6 +38,14 @@ const ActionHolder = styled.div`
     display: flex;
     gap: 16px;
     align-items: center;
+    @media only screen and (max-width: 1000px) {
+        flex-direction: column;
+
+        a {
+            width: 100%;
+            justify-content: center;
+        }
+    }
 `;
 
 const GridDetail = styled.div`
@@ -56,16 +74,29 @@ const Box = styled.div`
     display: flex;
     gap: 16px;
     flex-direction: column;
+    @media only screen and (max-width: 1000px) {
+        gap: 32px;
+        padding-top: 48px;
+        align-items: center;
+        justify-content: center;
+    }
 `;
 
 const ClientGrid = styled.div`
     display: flex;
     gap: 32px;
     align-items: center;
+    width: 100%;
 
     img {
         height: 100px;
         opacity: 0.7;
+    }
+
+    @media only screen and (max-width: 1000px) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 `;
 
@@ -86,7 +117,7 @@ const Hero = () => {
                 <GridImage />
             </GridDetail>
             <Box>
-                <span>Here are some companies i've worked with:</span>
+                <span>Here are some companies I've worked with:</span>
                 <ClientGrid>
                     <img src="/clients/Carta.png" />
                     <img src="/clients/Stone.png" />

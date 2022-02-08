@@ -14,16 +14,27 @@ export interface HeaderProps {
 const HeaderWrapper = styled.div`
     width: 100%;
     top: 0;
+    left: 0;
+    right: 0;
     position: fixed;
     padding: 40px 80px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     gap: 56px;
     z-index: 9;
 
     svg {
         min-width: 100px;
+    }
+
+    @media only screen and (max-width: 1000px) {
+        gap: 32px;
+        padding: 5%;
+        h1 {
+            font-size: 3rem;
+            line-height: 4.25rem;
+        }
     }
 `;
 
@@ -79,15 +90,6 @@ const Header = ({ modal }: HeaderProps) => {
     return (
         <HeaderWrapper>
             <Logo />
-            <MainNav>
-                <MutedLinkNav>
-                    My work <Badge>Soon</Badge>
-                </MutedLinkNav>
-                <MutedLinkNav>
-                    About me <Badge>Soon</Badge>
-                </MutedLinkNav>
-                <LinkNav href="mailto:hi@vitor.mobi">Contact</LinkNav>
-            </MainNav>
             <SocialNav>
                 <LinkNav
                     target="_blank"
