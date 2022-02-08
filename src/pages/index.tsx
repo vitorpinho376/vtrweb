@@ -1,6 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import Header from "../components/Header/Header";
+import Hero from "../components/Hero/Hero";
 
 const Home: React.FC = () => {
     return (
@@ -14,12 +15,7 @@ const Home: React.FC = () => {
                 />
             </Head>
             <Header />
-            <section>
-                <h1>
-                    <b>Design + Technology </b>
-                    can improve the world we live in.
-                </h1>
-            </section>
+            <Hero />
         </div>
     );
 };

@@ -31,7 +31,7 @@ const Badge = styled.div`
     padding: 4px 8px;
     background: rgba(255, 255, 255, 0.2);
     border-radius: 6px;
-    color: ${(props) => props.theme.colors.onSurface};
+    color: ${(props) => props.theme.colors.white};
     font-weight: 600;
     font-size: 14px;
     line-height: 18px;
@@ -52,12 +52,12 @@ const LinkNav = styled.a`
     font-weight: 600;
     font-size: 18px;
     line-height: 32px;
-    color: ${(props) => props.theme.colors.onSurface};
+    color: ${(props) => props.theme.colors.white};
     text-decoration: none;
 `;
 
 const MutedLinkNav = styled(LinkNav)`
-    color: ${(props) => props.theme.colors.onSurfaceMuted};
+    color: ${(props) => props.theme.colors.whiteMuted};
 `;
 
 const SocialNav = styled.nav`

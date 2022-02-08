@@ -9,7 +9,7 @@ export default createGlobalStyle`
 
    body {
 	background: ${(props) => props.theme.colors.gradient};
-    color: ${(props) => props.theme.colors.onSurface};
+    color: ${(props) => props.theme.colors.white};
     font-family: 'Open Sans', sans-serif;
 	background-size: 200% 200%;
 	animation: gradient 5s ease infinite;
@@ -26,24 +26,6 @@ export default createGlobalStyle`
         100% {
             background-position: 0% 50%;
         }
-    }
-
-    h1 {
-        font-weight: 900;
-        font-size: 80px;
-        line-height: 101px;
-        max-width: 900px;
-
-        b {
-            color: ${(props) => props.theme.colors.onSurfaceMuted};
-        }
-    }
-
-    section {
-        padding: 80px;
-        height: 100vh;
-        display: flex;
-        align-items: center;
     }
 
 `;
