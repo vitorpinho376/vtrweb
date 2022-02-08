@@ -14,6 +14,8 @@ export default createGlobalStyle`
        background-size: 200% 200%;
        animation: gradient 5s ease infinite;
        height: 100vh;
+       width: 100%;
+       overflow-x: hidden;
 
        @media only screen and (max-width: 1000px) {
         height: 100%;
