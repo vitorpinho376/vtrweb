@@ -2,11 +2,11 @@ import React from "react";
 import Button from "../Button/Button";
 import styled from "styled-components";
 import Linkedin from "../../assets/linkedin.svg";
-import GridImage from "../../assets/grid.svg";
+import GridImage from "../../assets/placeholder.svg";
 
 const MainSection = styled.section`
-    padding: 80px 80px 24px;
-    height: 100vh;
+    padding: 80px 80px 40px;
+    height: 100%;
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
@@ -16,6 +16,7 @@ const MainSection = styled.section`
         font-weight: 900;
         font-size: 80px;
         line-height: 6.25rem;
+        margin-top: 88px;
         max-width: 700px;
         font-style: italic;
 
@@ -57,23 +58,15 @@ const ActionHolder = styled.div`
 
 const GridDetail = styled.div`
     position: absolute;
+    max-width: 677px;
+    width: 100%;
+    margin-top: 48px;
+    margin-right: 48px;
     bottom: 0;
-    right: -25%;
-    animation: floating 5s ease-in-out infinite;
-
-    @keyframes floating {
-        0% {
-            opacity: 0;
-            transform: translatey(0px);
-        }
-        50% {
-            opacity: 0.7;
-            transform: translatey(-80px);
-        }
-        100% {
-            opacity: 0;
-            transform: translatey(0px);
-        }
+    top: 0;
+    right: 0;
+    @media only screen and (max-width: 1200px) {
+        display: none;
     }
 `;
 
@@ -94,10 +87,21 @@ const ClientGrid = styled.div`
     gap: 32px;
     align-items: center;
     width: 100%;
+    flex-wrap: wrap;
+    padding-top: 48px;
 
     img {
-        height: 100px;
+        padding: 24px;
+        min-height: 24px;
         opacity: 0.7;
+
+        &:first-child {
+            padding-left: 0;
+        }
+
+        &:last-child {
+            padding-right: 0;
+        }
     }
 
     @media only screen and (max-width: 1000px) {
@@ -132,12 +136,13 @@ const Hero = () => {
             </GridDetail>
             <Box>
                 <ClientGrid>
-                    <img src="/clients/Carta.png" />
-                    <img src="/clients/Stone.png" />
-                    <img src="/clients/HBO.png" />
-                    <img src="/clients/Springboard.png" />
-                    <img src="/clients/WhatsGood.png" />
-                    <img src="/clients/Nibo.png" />
+                    <img src="/clients/carta.svg" />
+                    <img src="/clients/stone.svg" />
+                    <img src="/clients/hbo.svg" />
+                    <img src="/clients/springboard.svg" />
+                    <img src="/clients/whatsgood.svg" />
+                    <img src="/clients/nibo.svg" />
+                    <img src="/clients/roobet.svg" />
                 </ClientGrid>
             </Box>
         </MainSection>
