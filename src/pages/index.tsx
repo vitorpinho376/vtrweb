@@ -10,10 +10,9 @@ const Home: React.FC = () => {
                 <title>Vtr | Senior Designer</title>
                 <link rel="icon" href="/favicon.png" />
                 <link
-                    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap"
+                    href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,900;1,400;1,600;1,900&display=swap"
                     rel="stylesheet"
                 />
-
                 <meta
                     name="viewport"
                     content="width=device-width, initial-scale=1, shrink-to-fit=no"

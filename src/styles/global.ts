@@ -10,7 +10,7 @@ export default createGlobalStyle`
    body {
        background: ${(props) => props.theme.colors.gradient};
        color: ${(props) => props.theme.colors.white};
-       font-family: 'Open Sans', sans-serif;
+       font-family: 'Source Sans Pro', sans-serif;
        background-size: 200% 200%;
        animation: gradient 5s ease infinite;
        height: 100vh;

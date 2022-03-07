@@ -10,17 +10,24 @@ const MainSection = styled.section`
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
-    gap: 56px;
+    gap: 24px;
 
     h1 {
         font-weight: 900;
-        font-size: 5rem;
+        font-size: 80px;
         line-height: 6.25rem;
-        max-width: 900px;
+        max-width: 700px;
+        font-style: italic;
 
         b {
             color: ${(props) => props.theme.colors.whiteMuted};
         }
+    }
+
+    p {
+        font-size: 20px;
+        line-height: 32px;
+        max-width: 594px;
     }
 
     @media only screen and (max-width: 1000px) {
@@ -103,10 +110,13 @@ const ClientGrid = styled.div`
 const Hero = () => {
     return (
         <MainSection>
-            <h1>
-                <b>Design + Technology </b>
-                can improve the world we live in.
-            </h1>
+            <h1>I help design teams to build better Design Systems</h1>
+            <p>
+                My name is Vitor Pinho and I am a passionate Designer and FE
+                Engineer based in Brazil. I have been working with digital
+                products for over +12 years. I love to improve processes and
+                build easy and fun solutions for humans.
+            </p>
             <ActionHolder>
                 <Button href="mailto:hi@vitor.mobi">Send a message</Button>
                 <Button
@@ -121,7 +131,6 @@ const Hero = () => {
                 <GridImage />
             </GridDetail>
             <Box>
-                <span>Here are some companies I've worked with:</span>
                 <ClientGrid>
                     <img src="/clients/Carta.png" />
                     <img src="/clients/Stone.png" />
