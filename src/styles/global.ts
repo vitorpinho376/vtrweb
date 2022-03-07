@@ -16,6 +16,8 @@ export default createGlobalStyle`
        height: 100vh;
        width: 100%;
        overflow-x: hidden;
+       -webkit-font-smoothing: antialiased;
+       -moz-osx-font-smoothing: grayscale;
 
        @media only screen and (max-width: 1000px) {
         height: 100%;
