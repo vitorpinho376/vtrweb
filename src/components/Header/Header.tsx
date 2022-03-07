@@ -32,6 +32,8 @@ const HeaderWrapper = styled.div`
         gap: 32px;
         padding: 5%;
         h1 {
+            font-style: italic;
+            font-weight: 900;
             font-size: 3rem;
             line-height: 4.25rem;
         }

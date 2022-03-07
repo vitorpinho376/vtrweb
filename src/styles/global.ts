@@ -10,12 +10,14 @@ export default createGlobalStyle`
    body {
        background: ${(props) => props.theme.colors.gradient};
        color: ${(props) => props.theme.colors.white};
-       font-family: 'Open Sans', sans-serif;
+       font-family: 'Source Sans Pro', sans-serif;
        background-size: 200% 200%;
        animation: gradient 5s ease infinite;
        height: 100vh;
        width: 100%;
        overflow-x: hidden;
+       -webkit-font-smoothing: antialiased;
+       -moz-osx-font-smoothing: grayscale;
 
        @media only screen and (max-width: 1000px) {
         height: 100%;

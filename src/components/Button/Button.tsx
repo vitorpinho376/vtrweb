@@ -11,24 +11,24 @@ export interface ButtonProps {
 
 const variantOptions = {
     primary: {
-        backgroundColor: theme.colors.white,
-        color: theme.colors.purple,
-        shadow: "0px 4px 8px rgba(0, 0, 0, 0.08)",
+        backgroundColor: "rgba(255, 255, 255, 0.2)",
+        color: theme.colors.white,
+        shadow: "none",
         border: "2px solid rgba(255, 255, 255, 0)",
-        hoveredBg: theme.colors.purple,
-        hoveredColor: theme.colors.white,
+        hoveredBg: theme.colors.white,
+        hoveredColor: theme.colors.blue,
         hoveredBorder: "2px solid rgba(255, 255, 255, 1)",
-        hoveredShadow: "0px 16px 24px rgba(0, 0, 0, 0.1)",
+        hoveredShadow: "0px 4px 8px rgba(0, 0, 0, 0.08)",
     },
     neutral: {
-        backgroundColor: "transparent",
+        backgroundColor: "rgba(255, 255, 255, 0.1)",
         color: theme.colors.white,
         shadow: "none",
         border: "2px solid rgba(255, 255, 255, 0.12)",
         hoveredBg: "rgba(255, 255, 255, 0.1)",
         hoveredColor: theme.colors.white,
         hoveredBorder: "2px solid rgba(255, 255, 255, 1)",
-        hoveredShadow: "0px 16px 24px rgba(0, 0, 0, 0.1)",
+        hoveredShadow: "0px 4px 8px rgba(0, 0, 0, 0.08)",
     },
 };
 
@@ -39,11 +39,13 @@ const StyledButton = styled.a<ButtonProps>`
     padding: 8px 24px;
     cursor: pointer;
     font-weight: 600;
+    font-style: normal;
     font-size: 18px;
-    line-height: 40px;
-    border-radius: 8px;
+    line-height: 32px;
+    border-radius: 999px;
     text-decoration: none;
     transition: all 0.2s ease-in;
+    backdrop-filter: blur(8px);
 
     svg {
         margin-top: -4px;
