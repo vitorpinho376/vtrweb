@@ -40,6 +40,16 @@ const MainSection = styled.section`
             line-height: 4.25rem;
         }
     }
+
+    @media only screen and (max-width: 1440px) {
+        gap: 24px;
+        padding: 10% 5% 5%;
+        height: auto;
+        h1 {
+            font-size: 3.6rem;
+            line-height: 4.6rem;
+        }
+    }
 `;
 
 const ActionHolder = styled.div`
@@ -68,6 +78,12 @@ const GridDetail = styled.div`
     @media only screen and (max-width: 1200px) {
         display: none;
     }
+
+    @media only screen and (min-width: 1600px) {
+        margin-top: 5%;
+        margin-right: 10%;
+        max-width: 800px;
+    }
 `;
 
 const Box = styled.div`
@@ -84,7 +100,7 @@ const Box = styled.div`
 
 const ClientGrid = styled.div`
     display: flex;
-    gap: 32px;
+    gap: 16px;
     align-items: center;
     width: 100%;
     flex-wrap: wrap;
@@ -108,6 +124,13 @@ const ClientGrid = styled.div`
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
+
+    @media only screen and (max-width: 1440px) {
+        img {
+            padding: 24px;
+            min-height: 18px;
+        }
     }
 `;
 
