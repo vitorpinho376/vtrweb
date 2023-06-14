@@ -4,7 +4,6 @@ import { useRouter } from "next/router";
 
 import GlobalStyle from "../styles/global";
 import { ThemeProvider } from "styled-components";
-import theme from "../styles/theme";
 import * as gtag from "../../lib/gtag";
 import Analytics from "../components/Analytics/Analytics";
 
@@ -21,11 +20,11 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
         };
     }, [router.events]);
     return (
-        <ThemeProvider theme={theme}>
+        <>
             <Component {...pageProps} />
             <GlobalStyle />
             <Analytics />
-        </ThemeProvider>
+        </>
     );
 };
 

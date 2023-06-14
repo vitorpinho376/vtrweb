@@ -8,14 +8,7 @@ export default createGlobalStyle`
    }
 
    body {
-       background: ${(props) => props.theme.colors.gradient};
-       color: ${(props) => props.theme.colors.white};
-       font-family: 'Source Sans Pro', sans-serif;
-       background-size: 200% 200%;
-       animation: gradient 5s ease infinite;
-       height: 100vh;
-       width: 100%;
-       overflow-x: hidden;
+       background: #0C0A14;
        -webkit-font-smoothing: antialiased;
        -moz-osx-font-smoothing: grayscale;
 
@@ -23,17 +16,5 @@ export default createGlobalStyle`
         height: 100%;
     }
    }
-
-   @keyframes gradient {
-        0% {
-            background-position: 0% 50%;
-        }
-        50% {
-            background-position: 100% 50%;
-        }
-        100% {
-            background-position: 0% 50%;
-        }
-    }
 
 `;

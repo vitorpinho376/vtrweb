@@ -1,14 +1,21 @@
 import styled, { keyframes } from "styled-components";
-import { Planet } from "./Planet.graphic";
-import { AstronautMan } from "./Astrounaut.graphic";
 
 const Universe = styled.div`
     width: 100%;
     height: 100vh;
-    background-color: #000;
     display: flex;
     justify-content: center;
     align-items: center;
+`;
+
+const Planet = styled.img`
+    width: 84px;
+    height: 54px;
+`;
+
+const AstronautMan = styled.img`
+    width: 192px;
+    height: 195px;
 `;
 
 const SceneWrapper = styled.div`
@@ -18,8 +25,9 @@ const SceneWrapper = styled.div`
 
 const PlanetGravity = styled.div`
     position: absolute;
-    top: -15%;
-    left: -15%;
+    top: -45%;
+    left: -25%;
+    z-index: 2;
 `;
 
 const floatAnimation = keyframes`
@@ -27,7 +35,7 @@ const floatAnimation = keyframes`
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-10px);
+    transform: translateY(-20px);
   }
   100% {
     transform: translateY(0);
@@ -44,10 +52,10 @@ export const AstronautScene = () => {
         <Universe>
             <SceneWrapper>
                 <PlanetGravity>
-                    <Planet />
+                    <Planet src="Planet.png" />
                 </PlanetGravity>
                 <AstroGravity>
-                    <AstronautMan />
+                    <AstronautMan src="Astronaut.png" />
                 </AstroGravity>
             </SceneWrapper>
         </Universe>
