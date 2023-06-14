@@ -11,6 +11,7 @@ export default createGlobalStyle`
        background: #0C0A14;
        -webkit-font-smoothing: antialiased;
        -moz-osx-font-smoothing: grayscale;
+       overflow: hidden;
 
        @media only screen and (max-width: 1000px) {
         height: 100%;
