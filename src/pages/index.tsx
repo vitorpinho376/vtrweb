@@ -18,7 +18,7 @@ const Home: React.FC = () => {
                 />
                 <link
                     rel="apple-touch-icon"
-                    href="https://vitor.mobi/favicon.png"
+                    href="https://vitor.mobi/Image.png"
                 />
 
                 <meta name="twitter:card" content="Vtr | Senior Designer" />
@@ -33,13 +33,10 @@ const Home: React.FC = () => {
                     content="Vitor Pinho builds awesome things for Web and Mobile and help business around the world to rethink their strategy and build stunning experiences for their users on multiple platforms. Designed for amazing apps like WhatsGood, Nibo and WizIQ."
                 />
 
-                <meta
-                    property="og:url"
-                    content="https://vitor.mobi/favicon.png"
-                />
+                <meta property="og:url" content="https://vitor.mobi/" />
                 <meta
                     property="og:image"
-                    content="https://vitor.mobi/favicon.png"
+                    content="https://vitor.mobi/Image.png"
                 />
                 <meta
                     property="og:title"
