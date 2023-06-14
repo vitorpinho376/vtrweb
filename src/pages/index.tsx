@@ -1,7 +1,6 @@
 import React from "react";
 import Head from "next/head";
-import Header from "../components/Header/Header";
-import Hero from "../components/Hero/Hero";
+import { AstronautScene } from "../components/AstronautScene/Scene.component";
 
 const Home: React.FC = () => {
     return (
@@ -56,8 +55,7 @@ const Home: React.FC = () => {
                 <meta name="HandheldFriendly" content="true" />
                 <meta name="author" content="Vitor Pinho" />
             </Head>
-            <Header />
-            <Hero />
+            <AstronautScene />
         </>
     );
 };
