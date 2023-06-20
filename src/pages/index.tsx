@@ -21,16 +21,19 @@ const Home: React.FC = () => {
                     href="https://vitor.mobi/Image.png"
                 />
 
-                <meta name="twitter:card" content="Vtr | Senior Designer" />
+                <meta
+                    name="twitter:card"
+                    content="Vtr | Senior Design Technologist"
+                />
                 <meta name="twitter:site" content="@vitor376" />
                 <meta name="twitter:url" content="https://vitor.mobi" />
                 <meta
                     name="twitter:title"
-                    content="Vitor Pinho | Senior Designer"
+                    content="Vitor Pinho | Senior Design Technologist"
                 />
                 <meta
                     name="twitter:description"
-                    content="Vitor Pinho builds awesome things for Web and Mobile and help business around the world to rethink their strategy and build stunning experiences for their users on multiple platforms. Designed for amazing apps like WhatsGood, Nibo and WizIQ."
+                    content="Meet Vitor Pinho, the design technologist who seamlessly blends creativity and technical expertise. With over 12 years of experience and a portfolio showcasing collaborations with renowned companies like Stone, Carta, Origin, and Whatsgood, Pinho bridges the gap between design and development. From translating visionary concepts into practical solutions to creating intuitive user experiences, Pinho leverages design systems and front-end technologies to deliver exceptional results. Partner with Pinho today and unleash the power of design + technology for your digital endeavors."
                 />
 
                 <meta property="og:url" content="https://vitor.mobi/" />
@@ -40,11 +43,11 @@ const Home: React.FC = () => {
                 />
                 <meta
                     property="og:title"
-                    content="Vitor Pinho | Senior Designer"
+                    content="Vitor Pinho | Senior Design Technologist"
                 />
                 <meta
                     property="og:description"
-                    content="Vitor Pinho builds awesome things for Web and Mobile and help business around the world to rethink their strategy and build stunning experiences for their users on multiple platforms. Designed for amazing apps like Stone, WhatsGood, Nibo and WizIQ."
+                    content="Meet Vitor Pinho, the design technologist who seamlessly blends creativity and technical expertise. With over 12 years of experience and a portfolio showcasing collaborations with renowned companies like Stone, Carta, Origin, and Whatsgood, Pinho bridges the gap between design and development. From translating visionary concepts into practical solutions to creating intuitive user experiences, Pinho leverages design systems and front-end technologies to deliver exceptional results. Partner with Pinho today and unleash the power of design + technology for your digital endeavors."
                 />
                 <meta property="og:site_name" content="Vitor.mobi" />
                 <meta property="og:type" content="portfolio" />
